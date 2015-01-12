@@ -30,6 +30,10 @@
 	opacity: 0;
 }
 
+.portfolio-item:hover .back {
+	opacity: 1;
+}
+
 .front, .back {
 	-webkit-backface-visibility: visible;
 }
@@ -41,6 +45,3 @@
 	-webkit-transform: rotateY( 180deg );
 }
 
-.back:hover {
-	opacity: 1;
-}
