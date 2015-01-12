@@ -1,0 +1,46 @@
+/*
+	Put your custom CSS here.
+
+	You may find these CSS3 properties useful:;
+		transition
+		-webkit-transform
+		-webkit-transform-style
+		-webkit-backface-visibility
+*/
+
+/* Crossfade transition 
+
+.front, .back {
+
+	transition: opacity 1s ease-in-out;
+}
+
+*/
+
+.portfolio-item {
+	-webkit-transform-style: preserve-3d;
+	transition: transform 1s;
+}
+
+.portfolio-item:hover {
+	-webkit-transform: rotateY( 180deg );
+}
+
+.portfolio-item:hover .front {
+	opacity: 0;
+}
+
+.front, .back {
+	-webkit-backface-visibility: visible;
+}
+
+.back {
+	position: absolute;
+	top: 0;
+	opacity: 0;
+	-webkit-transform: rotateY( 180deg );
+}
+
+.back:hover {
+	opacity: 1;
+}
